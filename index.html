@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATM</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+    </style>
 </head>
+
+
+
 <body>
-    <div>
-        <button>Inicio</button>
+    <div id="atm">
+        <div id="pantalla">
+        <div id="botonInicio">
+            <div>
+                <p>ATM Online</p>
+            </div>
+            <div>
+                <button>Start ATM!</button>
+            </div>
+            
+        </div>
+        <div id="menu1" style="display: none;">
+            <div>
+                <p>A que cuenta desea ingresar?</p>
+            </div>
+
+            <div class="opcionesMenu">
+                <button id="mali" class="persona">1.Mali</button>
+                <button id="gera" class="persona">2.Gera</button>
+                <button id="maui" class="persona">3.Maui</button>
+            </div>
+
+        </div>
+
+        <div id="menu2" style="display: none;">
+            <p id="nombreCuenta" style="display: none;"></p>
+            <p id="cuenta2" style="display: none;"></p>
+            <p>Que operacion desea realizar?</p>
+            <div class="opcionesMenu">
+                <button id="saldo" class="ops">Saldo $</button>
+                <button id="ingresar" class="ops">Ingresar $</button>
+                <button id="retirar" class="ops">Retirar $</button>
+            </div>
+
+        </div>
     </div>
-    <div id="pantalla">
-        <img src="./img/unnamed-removebg-preview (1).png" alt="atm">
     </div>
+    
+
+
+
     <script src="./atm.js"></script>
 </body>
+
 </html>
