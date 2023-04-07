@@ -82,7 +82,7 @@ operacionList.forEach(function (operacion) {
 
             //movimiento 1 de consultar saldo
             if (movimiento == 1) {
-                alert("Su saldo es de " + cuentas[cuenta - 1].saldo);
+                alert("Su saldo es de $" + cuentas[cuenta - 1].saldo);
                 
             //movimiento 2 de ingresar $
             } else if (movimiento == 2) {
@@ -92,11 +92,11 @@ operacionList.forEach(function (operacion) {
                 
                 //restringimos el limite superior a 990$
                 if(nuevoSaldo>990){
-                    alert("Como regla de negocio, una cuenta no debe de tener más de $990 y menos de $10, el monto maximo que puede ingresar es de:" + (990-cuentas[cuenta - 1].saldo));
+                    alert("Como regla de negocio, una cuenta no debe de tener más de $990 y menos de $10, el monto maximo que puede ingresar es de: $" + (990-cuentas[cuenta - 1].saldo));
                     
                 } else {
                     cuentas[cuenta - 1].saldo += ingreso;
-                    alert("El monto a ingresar es de " + ingreso + ". Su nuevo saldo es: " + cuentas[cuenta - 1].saldo);
+                    alert("El monto a ingresar es de $" + ingreso + ". Su nuevo saldo es: $" + cuentas[cuenta - 1].saldo);
                 }
     
                 
@@ -108,10 +108,10 @@ operacionList.forEach(function (operacion) {
                 
                 //restringimos el limite inferior a 10$
                 if(nuevoSaldo2<10){
-                    alert("Como regla de negocio, una cuenta no debe de tener más de $990 y menos de $10, el monto maximo que puede retirar es de:" + (cuentas[cuenta - 1].saldo - 10));
+                    alert("Como regla de negocio, una cuenta no debe de tener más de $990 y menos de $10, el monto maximo que puede retirar es de: $" + (cuentas[cuenta - 1].saldo - 10));
                 } else {
                     cuentas[cuenta - 1].saldo -= retiro;
-                    alert("El monto a ingresar es de " + ingreso + ". Su nuevo saldo es: " + cuentas[cuenta - 1].saldo);
+                    alert("El monto a ingresar es de $" + ingreso + ". Su nuevo saldo es: " + cuentas[cuenta - 1].saldo);
                 }
 
                 
